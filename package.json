@@ -1,5 +1,5 @@
 {
-  "name": "react-rte",
+  "name": "@humanz/react-rte",
   "version": "0.16.3",
   "description": "React Rich Text Editor",
   "main": "dist/react-rte.js",
@@ -13,7 +13,6 @@
     "build-lib": "rimraf lib && babel src --ignore \"_*\" --out-dir lib --copy-files",
     "lint": "eslint --max-warnings 0 .",
     "typecheck": "flow",
-    "prepare": "npm run build",
     "start": "webpack-dev-server --content-base assets/",
     "test": "npm run lint && npm run typecheck && npm run test-src",
     "test-src": "BABEL_ENV=test mocha \"src/**/__tests__/*.js\""
